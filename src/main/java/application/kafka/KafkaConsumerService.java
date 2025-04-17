@@ -33,10 +33,6 @@ public class KafkaConsumerService {
           Telemetry telemetry = objectMapper.readValue(kafkaMessage.getMessage(), Telemetry.class);
           telemetryService.insertTelemetry(telemetry);
         }
-        case READ_TELEMETRY -> {
-          RequestReadTelemetry requestReadTelemetry = objectMapper.readValue(kafkaMessage.getMessage(), RequestReadTelemetry.class);
-          ResponseReadTelemetry response = telemetryService.readTelemetry(requestReadTelemetry);
-        }
         default -> LOGGER.error("Not valid command in request");
       }
 
