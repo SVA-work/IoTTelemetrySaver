@@ -1,8 +1,6 @@
 package application.kafka;
 
 import application.dto.KafkaMessage;
-import application.dto.RequestReadTelemetry;
-import application.dto.ResponseReadTelemetry;
 import application.entity.Telemetry;
 import application.service.TelemetryService;
 import com.fasterxml.jackson.core.JsonProcessingException;

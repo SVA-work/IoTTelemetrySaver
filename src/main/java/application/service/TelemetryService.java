@@ -2,7 +2,6 @@ package application.service;
 
 import application.dto.DeviceIdDto;
 import application.dto.RequestReadTelemetry;
-import application.dto.ResponseReadTelemetry;
 import application.entity.Telemetry;
 import com.datastax.oss.driver.api.core.CqlSession;
 import com.datastax.oss.driver.api.core.cql.BoundStatement;
@@ -14,9 +13,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class TelemetryService {
