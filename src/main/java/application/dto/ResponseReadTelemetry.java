@@ -9,6 +9,5 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class ResponseReadTelemetry {
-
-  private List<Telemetry> allTelemetries;
+    private List<Telemetry> allTelemetries;
 }

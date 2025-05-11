@@ -15,11 +15,11 @@ import java.util.Collection;
 @Slf4j
 @RestController
 public class TelemetryController {
-  private final TelemetryService telemetryService;
+    private final TelemetryService telemetryService;
 
-  @GetMapping("/telemetry/{deviceName}/{login}")
-  public Collection<Telemetry> deviceTelemetry(@PathVariable String deviceName, @PathVariable String login) {
-    RequestReadTelemetry request = new RequestReadTelemetry(deviceName, login);
-    return telemetryService.readTelemetry(request);
-  }
+    @GetMapping("/telemetry/{deviceName}/{login}")
+    public Collection<Telemetry> deviceTelemetry(@PathVariable String deviceName, @PathVariable String login) {
+        RequestReadTelemetry request = new RequestReadTelemetry(deviceName, login);
+        return telemetryService.readTelemetry(request);
+    }
 }

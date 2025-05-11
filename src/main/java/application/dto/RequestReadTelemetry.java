@@ -6,7 +6,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class RequestReadTelemetry {
-
-  private String deviceName;
-  private String login;
+    private String deviceName;
+    private String login;
 }

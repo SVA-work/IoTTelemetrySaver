@@ -7,6 +7,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class KafkaMessage {
-  private Command command;
-  private String message;
+    private Command command;
+    private String message;
 }
